@@ -1,14 +1,32 @@
-/* 
-Make	Model	Type	Yrs. Prod.	Height	Length	Weight	Prop.	Engine	PTO	Gross pwr	DB pwr	DB pull	NTTL score	Serial #	JTN	"Birth yr"
-
-Ferguson	TO-35	Utility	54-'60	57"	117"	3.2K lbs	Rear	SDC 2.3L Diesel	32 HP	33 HP	30.5 HP	3.4K lbs	690	194014	2	1959
-John Deere	B	Row crop	48-'52	56"	120.5"	4.4K lbs	Rear	JD 3L 2-cyl		28 HP	24.6 HO	3.5K lbs	380	240767	11	1949
-*/
+/**
+ * This file contains the data for the tractors 
+ */
+export interface TractorInfo {
+  slug: number;
+  file: string;
+  make: string;
+  model: string;
+  type: string;
+  years: string;
+  height: string;
+  length: string;
+  weight: string;
+  prop: string;
+  engine: string;
+  pto: string;
+  grossPower: string;
+  dbPower: string;
+  dbPull: string;
+  ntllScore: string;
+  serialNumber: string;
+  jtn: string;
+  birthYear: string;
+}
 
 const tractorInfo=[
     {
-        slug: 0,
-      file: "3510-3514",
+      slug: 0,
+      file: "3510",
       make: "Allis-Chalmers",
       model: "C",
       type: "Row crop",
@@ -20,16 +38,16 @@ const tractorInfo=[
       engine: "Allis-Chalmers CE",
       pto: "23.3 HP",
       grossPower: "21 HP",
-      dbPwr: "18.4 HP",
+      dbPower: "18.4 HP",
       dbPull: "2.3K lbs",
-      ntllScore: 363,
-      serialNumber: "",
-      jtn: 1,
-      birthYear: null
+      ntllScore: "363",
+      serialNumber: "zz",
+      jtn: "1",
+      birthYear: ""
     },
     {
         slug: 1,
-      file: "3515-3517",
+      file: "3515",
       make: "Ferguson",
       model: "TO-35",
       type: "Utility",
@@ -41,16 +59,16 @@ const tractorInfo=[
       engine: "SDC 2.3L Diesel",
       pto: "32 HP",
       grossPower: "33 HP",
-      dbPwr: "30.5 HP",
+      dbPower: "30.5 HP",
       dbPull: "3.4K lbs",
-      ntllScore: 690,
+      ntllScore: "690",
       serialNumber: "194014",
-      jtn: 2,
-      birthYear: 1959
+      jtn: "2",
+      birthYear: "1959"
     },
     {
         slug: 2,
-      file: "3519-3522",
+      file: "3519",
       make: "Case",
       model: "VC",
       type: "Row crop",
@@ -62,16 +80,16 @@ const tractorInfo=[
       engine: "Continental 2L Gas",
       pto: "24 HP",
       grossPower: "20.5 HP",
-      dbPwr: "16 HP",
+      dbPower: "16 HP",
       dbPull: "2.2K lbs",
-      ntllScore: 423,
+      ntllScore: "423",
       serialNumber: "",
-      jtn: 3,
-      birthYear: 1941
+      jtn: "3",
+      birthYear: "1941"
     },
     {
         slug: 3,
-      file: "3523-3525",
+      file: "35235",
       make: "Ferguson",
       model: "TO-30",
       type: "Utility",
@@ -83,37 +101,37 @@ const tractorInfo=[
       engine: "Continental 2L Gas",
       pto: "28 HP",
       grossPower: "30 HP",
-      dbPwr: "24 HP",
+      dbPower: "24 HP",
       dbPull: "3K lbs",
-      ntllScore: 466,
+      ntllScore: "466",
       serialNumber: "129766",
-      jtn: 4,
-      birthYear: 1954
+      jtn: "4",
+      birthYear: "1954"
     },
-    {
-        slug: 4,
-      file: "3526-3527",
-      make: "?",
-      model: "",
-      type: "",
-      years: "",
-      height: "",
-      length: "",
-      weight: "",
-      prop: "",
-      engine: "",
-      pto: "",
-      grossPower: "",
-      dbPwr: "",
-      dbPull: "",
-      ntllScore: null,
-      serialNumber: "",
-      jtn: 5,
-      birthYear: null
-    },
+    // {
+    //     slug: 4,
+    //   file: "3526-3527",
+    //   make: "?",
+    //   model: "",
+    //   type: "",
+    //   years: "",
+    //   height: "",
+    //   length: "",
+    //   weight: "",
+    //   prop: "",
+    //   engine: "",
+    //   pto: "",
+    //   grossPower: "",
+    //   dbPower: "",
+    //   dbPull: "",
+    //   ntllScore: "zz",
+    //   serialNumber: "",
+    //   jtn: "5",
+    //   birthYear: ""
+    // },
     {
         slug: 5,
-      file: "3528-3530",
+      file: "3528",
       make: "John Deere",
       model: "B",
       type: "Row crop",
@@ -125,12 +143,12 @@ const tractorInfo=[
       engine: "JD 3L 2-cyl",
       pto: "",
       grossPower: "28 HP",
-      dbPwr: "24.6 HP",
+      dbPower: "24.6 HP",
       dbPull: "3.5K lbs",
-      ntllScore: 380,
+      ntllScore: "380",
       serialNumber: "",
-      jtn: 6,
-      birthYear: null
+      jtn: "6",
+      birthYear: ""
     },
     {
         slug: 6,
@@ -146,16 +164,16 @@ const tractorInfo=[
       engine: "JD 3L 2-cyl",
       pto: "",
       grossPower: "28 HP",
-      dbPwr: "24.6 HP",
+      dbPower: "24.6 HP",
       dbPull: "3.5K lbs",
-      ntllScore: 380,
+      ntllScore: "380",
       serialNumber: "",
-      jtn: 7,
-      birthYear: null
+      jtn: "7",
+      birthYear: ""
     },
     {
         slug: 7,
-      file: "3532-3533",
+      file: "3532",
       make: "Ford",
       model: "9N",
       type: "Utility",
@@ -167,16 +185,16 @@ const tractorInfo=[
       engine: "Ford 2L 4-cyl",
       pto: "26 HP",
       grossPower: "23.5 HP",
-      dbPwr: "16.3 HP",
+      dbPower: "16.3 HP",
       dbPull: "2.2K lbs",
-      ntllScore: 339,
+      ntllScore: "339",
       serialNumber: "",
-      jtn: 8,
-      birthYear: null
+      jtn: "8",
+      birthYear: ""
     },
     {
         slug: 8,
-      file: "3534-3535",
+      file: "3534",
       make: "Case",
       model: "VC",
       type: "Row crop",
@@ -188,16 +206,16 @@ const tractorInfo=[
       engine: "Continental 2L Gas",
       pto: "24 HP",
       grossPower: "20.5 HP",
-      dbPwr: "16 HP",
+      dbPower: "16 HP",
       dbPull: "2.2K lbs",
-      ntllScore: 423,
+      ntllScore: "423",
       serialNumber: "",
-      jtn: 9,
-      birthYear: null
+      jtn: "9",
+      birthYear: ""
     },
     {
         slug: 9,
-      file: "3536-3537, 3542",
+      file: "3536",
       make: "John Deere",
       model: "A",
       type: "Row crop",
@@ -209,16 +227,16 @@ const tractorInfo=[
       engine: "JD 5L 2-cyl",
       pto: "",
       grossPower: "",
-      dbPwr: "",
+      dbPower: "",
       dbPull: "",
-      ntllScore: 384,
+      ntllScore: "384",
       serialNumber: "546632",
-      jtn: 10,
-      birthYear: 1945
+      jtn: "10",
+      birthYear: "1945"
     },
     {
         slug: 10,
-      file: "3538-3539, 3543",
+      file: "3538",
       make: "John Deere",
       model: "B",
       type: "Row crop",
@@ -230,16 +248,16 @@ const tractorInfo=[
       engine: "JD 3L 2-cyl",
       pto: "",
       grossPower: "28 HP",
-      dbPwr: "24.6 HO",
+      dbPower: "24.6 HO",
       dbPull: "3.5K lbs",
-      ntllScore: 380,
+      ntllScore: "380",
       serialNumber: "240767",
-      jtn: 11,
-      birthYear: 1949
+      jtn: "11",
+      birthYear: "1949"
     },
     {
-        slug: 11,
-      file: "3540-3541, 3544",
+      slug: 11,
+      file: "3540",
       make: "John Deere",
       model: "A",
       type: "Row crop",
@@ -251,76 +269,47 @@ const tractorInfo=[
       engine: "JD 5L 2-cyl",
       pto: "",
       grossPower: "",
-      dbPwr: "",
+      dbPower: "",
       dbPull: "",
-      ntllScore: 384,
+      ntllScore: "384",
       serialNumber: "?",
-      jtn: 12,
-      birthYear: null
+      jtn: "12",
+      birthYear: ""
     }
    ]
 
-const tractorInfo2 = [
-    {
-    slug:0,
-    make: 'Ferguson',
-    model: 'TO-35',
-    type: 'Utility',
-    years: '54-60',
-    height: '57"',
-    length: '117"',
-    weight: '3.2K lbs',
-    prop: 'Rear',
-    engine: 'SDC 2.3L Diesel',
-    pto: '32 HP',
-    grossPower: '33 HP',
-    dbPower: '30.5 HP',
-    dbPull: '3.4K lbs',
-    ntllScore: '690',
-    serialNumber: '194014',
-    jtn: '2',
-    birthYear: '1959'
-},
-{
-    slug:1,
-    make: 'John Deere',
-    model: 'B',
-    type: 'Row crop',
-    years: '48-52',
-    height: '56"',
-    length: '120.5"',
-    weight: '4.4 lbs',
-    prop: 'Rear',
-    engine: 'JD 3L 2-cyl',
-    pto: '',
-    grossPower: '28 HP',
-    dbPower: '24.6 HP',
-    dbPull: '3.5K lbs',
-    ntllScore: '380',
-    serialNumber: '240767',
-    jtn: '11',
-    birthYear: '1949'
-},
-]
+/**
+ * Slug is the unique identifier for a tractor. It can be used to generate
+ *   the static properties
+ * @returns {Promise<string[]>}  list of slugs for the tractors
+ */
+export async function getSlugs(): Promise<number[]> {
+  return tractorInfo.map((tractor) => tractor.slug);
+}
 
-export async function getTractor(slug: number) {
-    // const {
-    //   content,
-    //   data: { title, date, image },
-    // } = matter(text);
-    // const body = marked(content, { headerIds: false, mangle: false });
-    const tractor = tractorInfo[slug];
-    return tractor;
-  }
+export async function getTractor(slug: number) : Promise<TractorInfo| undefined> {
+  console.log(`[getTractor] ${slug} ${typeof slug}`);
+  
+  const tractor: TractorInfo | undefined = tractorInfo.find((tractor) => tractor.slug === slug);
+
+  // console.log(`[getTractor] returned tractoor ${JSON.stringify(tractor)}`);
+  return Promise.resolve(tractor);
+}
+
 /**
  * 
  * @returns {Promise<string[]>}  list of tractors
  */
 export async function getTractors() {
+    const slugs = await getSlugs();
     const tractors = [];
-    for (const tractor of tractorInfo) {
-      tractors.push(tractor);
+    for (const slug of slugs) {
+      const tractor = await getTractor(slug);
+      if (tractor !== undefined) {
+        tractors.push(tractor);
+        }
     }
     // tractors.sort((a, b) => b.date.localeCompare(a.date));
     return tractors;
+  
   }
